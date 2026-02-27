@@ -5,17 +5,17 @@ Este projeto consiste em um dashboard interativo desenvolvido no Power BI com o 
 
 O painel foi construído para simular um cenário real de gestão comercial, permitindo:
 
-Monitorar faturamento por loja
+- Monitorar faturamento por loja
 
-Avaliar desempenho por forma de pagamento
+- Avaliar desempenho por forma de pagamento
 
-Analisar evolução mensal das vendas
+- Analisar evolução mensal das vendas
 
-Calcular crescimento percentual mês a mês
+- Calcular crescimento percentual mês a mês
 
-Comparar faturamento realizado versus meta mensal
+- Comparar faturamento realizado versus meta mensal
 
-Identificar participação percentual por produto
+- Identificar participação percentual por produto
 
 🏗 Estrutura do Modelo de Dados
 
@@ -23,124 +23,137 @@ O modelo foi construído seguindo boas práticas de BI, utilizando estrutura em 
 
 🔹 Tabelas
 
-registroVendas (Fato)
+- registroVendas (Fato)
 
-ID Pedido
+- ID Pedido
 
-Data Pedido
+- Data Pedido
 
-Código Loja
+- Código Loja
 
-Produto
+- Produto
 
-Quantidade
+- Quantidade
 
-Preço Unitário
+- Preço Unitário
 
-Valor Vendido
+- Valor Vendido
 
-Pagamento
+- Pagamento
 
-lojas (Dimensão)
+- lojas (Dimensão)
 
-codigo_loja
+- codigo_loja
 
-nome_loja
+- nome_loja
 
-Cidade
+- Cidade
 
-UF
+- UF
 
 DimData (Dimensão de Calendário)
 
-Date
+- Date
 
-Ano
+- Ano
 
-MesNumero
+- MesNumero
 
-MesNome
+- MesNome
 
-AnoMes
+- AnoMes
 
-AnoMes_Ordem
+- AnoMes_Ordem
 
 _Medidas
 Tabela dedicada exclusivamente para organização das medidas do modelo.
 
 🔗 Relacionamentos
 
-DimData[Date] → registroVendas[Data Pedido]
+- DimData[Date] → registroVendas[Data Pedido]
 
-lojas[codigo_loja] → registroVendas[Código Loja]
+- lojas[codigo_loja] → registroVendas[Código Loja]
 
-Direção de filtro: dimensão → fato.
+- Direção de filtro: dimensão → fato.
 
 📊 Principais Indicadores do Dashboard
 
-Faturamento Total
+- Faturamento Total
 
-Comissão
+- Comissão
 
-Ticket Médio
+- Ticket Médio
 
-Crescimento Mensal (%)
+- Crescimento Mensal (%)
 
-Meta Mensal
+- Meta Mensal
 
-Percentual de Atingimento da Meta
+- Percentual de Atingimento da Meta
 
 📈 Visuais Desenvolvidos
 
-Gráfico de colunas: Faturamento por Loja
+- Gráfico de colunas: Faturamento por Loja
 
-Gráfico de rosca: Distribuição por forma de pagamento
+- Gráfico de rosca: Distribuição por forma de pagamento
 
-Gráfico combinado (coluna + linha): Faturamento vs Meta Mensal
+- Gráfico combinado (coluna + linha): Faturamento vs Meta Mensal
 
-Sparkline: Tendência de crescimento mensal
+- Sparkline: Tendência de crescimento mensal
 
-Tabela com formatação condicional: Participação por produto
+- Tabela com formatação condicional: Participação por produto
 
-Cards de KPI: Indicadores estratégicos
+- Cards de KPI: Indicadores estratégicos
 
 🎯 Problema de Negócio Simulado
 
 O dashboard foi desenvolvido para responder às seguintes perguntas:
 
-Qual loja apresenta melhor desempenho?
+- Qual loja apresenta melhor desempenho?
 
-O faturamento está crescendo ou desacelerando?
+- O faturamento está crescendo ou desacelerando?
 
-A meta mensal está sendo atingida?
+- A meta mensal está sendo atingida?
 
-Qual produto possui maior participação no faturamento?
+- Qual produto possui maior participação no faturamento?
 
-Como as vendas estão distribuídas por meio de pagamento?
+- Como as vendas estão distribuídas por meio de pagamento?
 
 🛠 Ferramentas Utilizadas
 
-Power BI Desktop
+- Power BI Desktop
 
-DAX (Data Analysis Expressions)
+- DAX (Data Analysis Expressions)
 
-Modelagem Dimensional
+- Modelagem Dimensional
 
-Inteligência temporal (Time Intelligence)
+- Inteligência temporal (Time Intelligence)
 
-Formatação condicional
+- Formatação condicional
 
 📌 Diferenciais Técnicos
 
-Separação de medidas em tabela dedicada (_Medidas)
+- Separação de medidas em tabela dedicada (_Medidas)
 
-Uso de tabela calendário para cálculos temporais
+- Uso de tabela calendário para cálculos temporais
 
-Aplicação de crescimento mensal (MoM)
+- Aplicação de crescimento mensal (MoM)
 
-Implementação de meta e comparação visual (Realizado vs Meta)
+- Implementação de meta e comparação visual (Realizado vs Meta)
 
-Estrutura de modelo seguindo padrão estrela
+- Estrutura de modelo seguindo padrão estrela
+
+
+🚀 Melhorias Futuras
+
+- Implementação de metas dinâmicas por loja e por período
+
+- Inclusão de análises acumuladas (YTD) e comparações anuais (YoY)
+
+- Expansão para análise de margem e lucratividade
+
+- Criação de páginas de drill-through para detalhamento
+
+
 
 📷 Preview
 
@@ -148,5 +161,5 @@ Estrutura de modelo seguindo padrão estrela
 
 👤 Autor
 
-Desenvolvido por Otávio Tavares
-Projeto para portfólio de Business Intelligence
+Desenvolvido por Otávio Iandre Domingues Tavares
+
