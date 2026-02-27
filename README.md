@@ -157,6 +157,8 @@ O dashboard foi desenvolvido para responder às seguintes perguntas:
 
 📷 Preview
 
+![Preview do Dashboard](Preview-Dashboard.png)
+
 
 
 👤 Autor
